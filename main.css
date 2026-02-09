@@ -1,0 +1,322 @@
+/*  ---------------------------------------------- Global styles---------------------------------------------*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+/* ---------------------------------------Top menu ----------------------------------------------------------*/
+
+.container-top-menu {
+  height: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* ----------------------------------Top menu left, the search bar ---------------------------------------------*/
+
+.top-menu-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.top-menu-left-search {
+  width: 80%;
+  height: 30px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+/* ----------------------------------Top menu center, the main navigation ---------------------------------------------*/
+
+.top-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.top-menu-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.top-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.top-menu-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.top-menu-li i:hover {
+  color: #1877f2;
+}
+
+/* ----------------------------------Top menu right, the user options ---------------------------------------------*/
+
+.top-menu-right {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.top-menu-r-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.top-menu-r-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 5px;
+}
+
+.top-menu-r-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.top-menu-r-li:hover {
+  background-color: #d8dadf;
+}
+
+/* ---------------------------------------Container of the main content ------------------------------------------*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+/* ---------------------------------------Main content, left menu ------------------------------------------*/
+
+.left-menu {
+  display: flex;
+  background-color: #f7f7f7;
+  justify-content: center;
+  height: 95vh;
+  width: 100%;
+}
+
+.left-menu-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.left-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  gap: 10px;
+}
+
+.left-menu-li {
+  display: flex;
+  flex: 1;
+  height: 5%;
+  align-items: center;
+}
+
+.left-menu-li:hover {
+  background-color: #f0f2f5;
+}
+
+/* ---------------------------------------Main content, center content ------------------------------------------*/
+
+.midle-menu {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+
+/* histories */
+
+.histories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 3%;
+  gap: 10px;
+}
+
+.history {
+  border: 2px solid #ccc;
+  height: 20vh;
+  position: relative;
+  border-radius: 10px;
+}
+
+.history img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.history:hover img {
+  transform: scale(1.02);
+}
+
+.history-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Photo */
+
+.post-photo {
+  height: 30vh;
+  border: 2px solid #ccc;
+}
+
+.post-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.post-photo img:hover {
+  transform: scale(1.02);
+}
+
+/* me gusta y compartidos */
+
+.post-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+}
+
+.post-footer-nav {
+  width: 100%;
+}
+
+.post-footer-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* post reactions */
+
+.post-reactions {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+.post-reactions-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.post-reactions-li {
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.post-reactions-li:hover {
+  background-color: #f0f2f5;
+}
+
+/* ---------------------------------------Main content, right menu ------------------------------------------*/
+
+.menu-right {
+  display: flex;
+  background-color: #f7f7f7;
+  justify-content: center;
+  height: 95vh;
+  width: 100%;
+}
+
+.friends {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.friends-li {
+  display: flex;
+  flex: 1;
+  height: 5%;
+  width: 100%;
+  align-items: center;
+}
+
+.friends-li:hover {
+  background-color: #f0f2f5;
+}
