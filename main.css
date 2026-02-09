@@ -212,6 +212,13 @@ li {
   font-size: 13px;
 }
 
+/* Post header */
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
 /* Photo */
 
 .post-photo {
