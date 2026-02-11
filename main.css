@@ -16,12 +16,16 @@ li {
 /* ---------------------------------------Top menu ----------------------------------------------------------*/
 
 .container-top-menu {
-  height: 5vh;
+  height: 60px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 20px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
 }
 
 /* ----------------------------------Top menu left, the search bar ---------------------------------------------*/
@@ -132,8 +136,11 @@ li {
   display: flex;
   background-color: #f7f7f7;
   justify-content: center;
-  height: 95vh;
+  height: calc(100vh - 60px);
   width: 100%;
+  position: sticky;
+  top: 60px;
+  overflow-y: auto;
 }
 
 .left-menu-nav {
@@ -167,12 +174,22 @@ li {
 
 /* ---------------------------------------Main content, center content ------------------------------------------*/
 
-.midle-menu {
+.middle-menu {
   display: flex;
-  background-color: #fff;
-  justify-content: center;
-  height: 90vh;
+  flex-direction: column;
+  background-color: #f0f2f5; /* Light gray background like Facebook */
+  min-height: calc(100vh - 60px);
   width: 100%;
+}
+
+.post {
+  background-color: #fff;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 680px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 12px;
 }
 
 /* histories */
@@ -222,14 +239,18 @@ li {
 /* Photo */
 
 .post-photo {
-  height: 30vh;
-  border: 2px solid #ccc;
+  height: 400px;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  background-color: #000;
 }
 
 .post-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.2s;
 }
 
@@ -294,8 +315,11 @@ li {
   display: flex;
   background-color: #f7f7f7;
   justify-content: center;
-  height: 95vh;
+  height: calc(100vh - 60px);
   width: 100%;
+  position: sticky;
+  top: 60px;
+  overflow-y: auto;
 }
 
 .friends {
