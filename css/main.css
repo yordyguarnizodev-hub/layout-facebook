@@ -421,7 +421,6 @@ li {
   position: sticky;
   top: 3.75rem;
   height: calc(100vh - 3.75rem);
-  overflow-y: auto;
 }
 
 .friends-list {
