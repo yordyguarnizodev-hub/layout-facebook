@@ -33,6 +33,10 @@ li {
 
 /* ----------------------------------Top menu left, the search bar ---------------------------------------------*/
 
+.fa-solid fa-magnifying-glass {
+  margin: 5px;
+}
+
 .top-menu-left {
   display: flex;
   justify-content: center;
@@ -456,4 +460,47 @@ li {
 
 .friends-li a:hover {
   background-color: #e4e6eb;
+}
+
+/* ---------------------------------------Responsive mobile ------------------------------------------*/
+
+@media (max-width: 768px) {
+  .container-top-menu {
+    height: 7.5rem;
+  }
+
+  .top-menu-left {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 50%;
+    justify-content: end;
+  }
+
+  .top-menu {
+    display: flex;
+    position: absolute;
+    top: 3.75rem;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .top-menu-right {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-menu {
+    display: none;
+  }
+
+  .menu-right {
+    display: none;
+  }
 }
