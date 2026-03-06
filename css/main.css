@@ -46,10 +46,6 @@ li {
 
 /* ----------------------------------Top menu left, the search bar ---------------------------------------------*/
 
-.fa-solid fa-magnifying-glass {
-  margin: 5px;
-}
-
 .top-menu-left {
   display: flex;
   justify-content: center;
@@ -58,13 +54,29 @@ li {
   height: 100%;
 }
 
-.top-menu-left-search {
+.desktop-search-container {
+  display: flex;
+  align-items: center;
   background-color: #f0f2f5;
+  border-radius: 1.5rem;
+  padding: 0 12px;
+  width: 16rem;
+  height: 2.5rem;
+}
+
+.desktop-search-container i {
+  color: #65676b;
+  font-size: 0.95rem;
+  margin-right: 10px;
+}
+
+.top-menu-left-search {
+  background-color: transparent;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 1.25rem;
-  width: 15rem;
+  padding: 0;
+  width: 100%;
   outline: none;
+  font-size: 0.95rem;
 }
 
 /* ----------------------------------Top menu center, the main navigation ---------------------------------------------*/
