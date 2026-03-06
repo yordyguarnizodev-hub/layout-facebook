@@ -14,9 +14,14 @@
   <body>
     <header class="container-top-menu">
       <div class="top-menu-left">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="#" class="mobile-only mobile-bars"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <h1 class="mobile-logo mobile-only">facebook</h1>
+
+        <i class="fa-solid fa-magnifying-glass desktop-only-icon"></i>
         <input
-          class="top-menu-left-search"
+          class="top-menu-left-search desktop-only"
           type="text"
           placeholder="Buscar en Facebook"
         />
@@ -24,20 +29,26 @@
       <div class="top-menu">
         <nav class="top-menu-nav">
           <ul class="top-menu-list">
-            <li class="top-menu-li">
+            <li class="top-menu-li active-tab">
               <a href="#"><i class="fa-solid fa-house"></i></a>
             </li>
             <li class="top-menu-li">
-              <a href="#"><i class="fa-solid fa-clapperboard 1"></i> </a>
+              <a href="#"><i class="fa-solid fa-clapperboard"></i> </a>
+            </li>
+            <li class="top-menu-li">
+              <a href="#"><i class="fa-solid fa-user-group"></i></a>
             </li>
             <li class="top-menu-li">
               <a href="#"><i class="fa-solid fa-store"></i></a>
             </li>
-            <li class="top-menu-li">
-              <a href="#"><i class="fa-solid fa-users"></i></a>
-            </li>
-            <li class="top-menu-li">
+            <li class="top-menu-li desktop-only">
               <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+            </li>
+            <li class="top-menu-li mobile-only">
+              <a href="#"><i class="fa-regular fa-bell"></i></a>
+            </li>
+            <li class="top-menu-li mobile-only">
+              <a href="#"><i class="fa-regular fa-user-circle"></i></a>
             </li>
           </ul>
         </nav>
@@ -45,16 +56,23 @@
       <div class="top-menu-right">
         <nav class="top-menu-r-nav">
           <ul class="top-menu-r-list">
-            <li class="top-menu-r-li">
+            <li class="top-menu-r-li desktop-only">
               <a href="#"><i class="fa-solid fa-bars"></i></a>
             </li>
+            <li class="top-menu-r-li mobile-only">
+              <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li class="top-menu-r-li mobile-only">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+
             <li class="top-menu-r-li">
               <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
             </li>
-            <li class="top-menu-r-li">
+            <li class="top-menu-r-li desktop-only">
               <a href="#"><i class="fa-solid fa-bell"></i></a>
             </li>
-            <li class="top-menu-r-li">
+            <li class="top-menu-r-li desktop-only">
               <a href="#"
                 ><i id="user-circle1" class="fa-solid fa-user-circle"></i
               ></a>
