@@ -126,6 +126,14 @@ li {
   color: #1877f2;
 }
 
+.top-menu-list .top-menu-li:focus-within {
+  border-bottom: 3px solid #1877f2;
+}
+
+.top-button:focus i {
+  color: #1877f2;
+}
+
 /* ----------------------------------Top menu right, the user options ---------------------------------------------*/
 
 .top-menu-r-list {
@@ -628,12 +636,12 @@ li {
     font-size: 1.5rem;
   }
 
-  .top-menu-li.active-tab {
-    border-bottom: 3px solid #0866ff;
+  .top-menu-list .top-menu-li:focus-within {
+    border-bottom: 3px solid #1877f2;
   }
 
-  .top-menu-li.active-tab i {
-    color: #0866ff;
+  .top-button:focus i {
+    color: #1877f2;
   }
 
   .create-post {
@@ -660,7 +668,6 @@ li {
     padding: 10px;
     gap: 10px;
     width: 100%;
-
     scrollbar-width: none;
   }
 
