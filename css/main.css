@@ -473,15 +473,12 @@ li {
 }
 
 .friends-li i {
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-right: 0.75rem;
   color: #1877f2;
-  background-color: #e4e6eb;
-  border-radius: 50%;
-  width: 2.2rem;
-  height: 2.2rem;
 }
 
 .friends-li a:hover {
