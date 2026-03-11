@@ -9,15 +9,6 @@ a {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
-  width: 100%;
-  overflow-x: hidden;
-}
-
 li {
   list-style: none;
 }
@@ -36,7 +27,6 @@ li {
   grid-template-columns: 1fr 2fr 1fr;
   gap: 1.25rem;
   border-bottom: 0.125rem solid #ccc;
-  padding-bottom: 0.625rem;
   position: sticky;
   top: 0;
   background-color: #fff;
@@ -103,6 +93,8 @@ li {
 .top-menu-li {
   flex: 1;
   position: relative;
+  border-bottom: 0.1875rem solid transparent;
+  transition: border-bottom-color 0.2s;
 }
 
 .top-menu-li a {
@@ -114,6 +106,7 @@ li {
   border-radius: 8px;
   transition: background-color 0.2s;
 }
+
 .top-menu-li a:hover {
   background-color: #f0f2f5;
 }
@@ -127,7 +120,7 @@ li {
 }
 
 .top-menu-li:focus-within {
-  box-shadow: inset 0 -3px 0 #1877f2;
+  border-bottom-color: #1877f2;
 }
 
 .top-button:focus i {
@@ -522,7 +515,18 @@ li {
     flex-wrap: wrap;
     padding: 0.3125rem 0.625rem 0 0.625rem;
     gap: 0;
-    background-color: #fff;
+  }
+
+  .top-menu-left {
+    width: auto;
+    flex: 1;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .mobile-bars i {
+    font-size: 1.6rem;
+    color: #000;
   }
 
   .mobile-logo {
@@ -530,23 +534,55 @@ li {
     font-size: 1.7rem;
     font-weight: 700;
     margin: 0;
-    display: flex;
+  }
+
+  .top-menu {
+    width: 100%;
+    order: 3;
+    margin-top: 0.625rem;
+  }
+
+  .top-menu-list {
+    justify-content: space-between;
+  }
+
+  .top-menu-li i {
+    font-size: 1.5rem;
+  }
+
+  .top-menu-li a:hover {
+    background-color: transparent;
   }
 
   .top-menu-right {
     width: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
   }
 
-  .top-menu-left {
+  .top-menu-r-list {
+    gap: 0.9375rem;
+  }
+
+  .top-menu-r-li.mobile-only {
+    display: list-item;
+  }
+
+  .top-menu-li a {
+    padding: 0.625rem 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .top-menu-r-li a {
     width: auto;
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
+    height: auto;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: #000;
+    padding: 0.125rem;
+  }
+
+  .top-menu-r-li a:hover {
+    background-color: transparent;
   }
 
   .mobile-only {
@@ -566,80 +602,15 @@ li {
     overflow-x: hidden;
   }
 
-  .middle-menu {
-    min-width: 0;
-    width: 100%;
-    max-width: 100vw;
-  }
-
   .left-menu,
   .menu-right {
     display: none;
   }
 
-  .mobile-bars i {
-    font-size: 1.6rem;
-    color: #000;
-  }
-
-  .top-menu-r-list {
-    gap: 0.9375rem;
-  }
-
-  .top-menu-r-li.mobile-only {
-    display: list-item;
-  }
-
-  .top-menu-r-li a {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    font-size: 1.3rem;
-    color: #000;
-    padding: 0.125rem;
-  }
-
-  .top-menu-r-li a:hover {
-    background-color: transparent;
-  }
-
-  .top-menu {
+  .middle-menu {
+    min-width: 0;
     width: 100%;
-    order: 3;
-    margin-top: 0.625rem;
-  }
-
-  .top-menu-list {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .top-menu-li {
-    flex: 1;
-    align-items: center;
-  }
-
-  .top-menu-li.mobile-only {
-    display: flex;
-  }
-
-  .top-menu-li a {
-    padding: 0.625rem 0;
-    border-radius: 0;
-    width: 100%;
-  }
-
-  .top-menu-li i {
-    font-size: 1.5rem;
-  }
-
-  .top-menu-li:focus-within {
-    box-shadow: 0 0.125rem 0 #ccc;
-  }
-
-  .top-button:focus i {
-    color: #1877f2;
+    max-width: 100vw;
   }
 
   .create-post {
@@ -679,7 +650,6 @@ li {
     max-width: 100%;
     border-radius: 0;
     margin: 0.625rem 0 0 0;
-    box-sizing: border-box;
   }
 
   .post-reactions-li a {
