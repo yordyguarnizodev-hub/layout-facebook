@@ -520,7 +520,7 @@ y este haga el efecto deseado */
 
 /* ---------------------------------------Responsive Mobile ------------------------------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container-top-menu {
     width: 100%;
     max-width: 100%;
