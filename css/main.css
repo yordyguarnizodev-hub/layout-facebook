@@ -646,10 +646,7 @@ y este haga el efecto deseado */
     min-width: 0;
   }
 
-  /* Ocultar iconos de crear post, > Busca solo los hijos directos de .create-post-actions, esto para ocultar
-  el primer y tercer hijo*/
-  .create-post-actions > .action-item:nth-child(1),
-  .create-post-actions > .action-item:nth-child(3) {
+  .hide-icon-mobile {
     display: none;
   }
 
