@@ -376,6 +376,10 @@ y este haga el efecto deseado */
   gap: 0.625rem;
 }
 
+.post-header i {
+  font-size: 2rem;
+}
+
 /* Photo */
 
 .post-photo {
